@@ -52,11 +52,27 @@ public class IncredibleCalculator {
                 result= userInputini * userInputsecond;
                 System.out.println("El resultado es: " + result);
                     break;
-            case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
-                
+            case 4: // Division. Debes leer dos números enteros de entrada e imprimir su división entera.
+                System.out.println("Introduzca el dividendo:");
+                aux = sc.nextLine();
+                userInputini = IntegerparseInt(aux);
+                System.out.println("Introduzca el divisor:");
+                aux = sc.nextLine();
+                userInputsecond = IntegerparseInt(aux);
+
+                result= (int) userInputini / userInputsecond;
+                System.out.println("El resultado es: " + result);
                     break;
             case 5: // Division decimal. Debes leer dos números enteros de entrada e imprimir su división con decimales.
-                
+                System.out.println("Introduzca el primer número para sumar:");
+                aux = sc.nextLine();
+                userInputini = IntegerparseInt(aux);
+                System.out.println("Introduzca el segundo sumando:");
+                aux = sc.nextLine();
+                userInputsecond = IntegerparseInt(aux);
+
+                resultDou= (double)userInputini + userInputsecond;
+                System.out.printf("El resultado es: %.2f", resultDou);
                     break;
 
         }
