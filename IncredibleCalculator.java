@@ -42,7 +42,15 @@ public class IncredibleCalculator {
                 System.out.println("El resultado es: " + result);
                     break;
             case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su producto.
-            
+            System.out.println("Introduzca el primer factor:");
+                aux = sc.nextLine();
+                userInputini = IntegerparseInt(aux);
+                System.out.println("Introduzca el segundo factor:");
+                aux = sc.nextLine();
+                userInputsecond = IntegerparseInt(aux);
+
+                result= userInputini * userInputsecond;
+                System.out.println("El resultado es: " + result);
                     break;
             case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
                 
