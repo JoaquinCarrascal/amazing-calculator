@@ -4,6 +4,10 @@ public class IncredibleCalculator {
 
     public static void main(String[] args) {
 
+        int userInputini,userInputsecond,result;
+        String aux;
+        double resultDou;
+
         System.out.println("Selecciona la operación que prefieras realizar: ");
         System.out.println("1. Sumar");
         System.out.println("2. Restar");
@@ -16,14 +20,27 @@ public class IncredibleCalculator {
 
         switch (opcion) {
             case 1: //Sumar. Debes leer dos numeros enteros de entrada e imprimir su suma
+                System.out.println("Introduzca el primer número para sumar:");
+                aux = sc.nextLine();
+                userInputini = IntegerparseInt(aux);
+                System.out.println("Introduzca el segundo sumando:");
+                aux = sc.nextLine();
+                userInputsecond = IntegerparseInt(aux);
+
+                result= userInputini + userInputsecond;
+                System.out.println("El resultado es: " + result);
                     break;
             case 2: // Restar. Debes leer dos números enteros de entrada e imprimir su resta
+            
                     break;
             case 3: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su producto.
+            
                     break;
             case 4: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división entera.
+                
                     break;
-            case 5: // Multiplicar. Debes leer dos números enteros de entrada e imprimir su división con decimales.
+            case 5: // Division decimal. Debes leer dos números enteros de entrada e imprimir su división con decimales.
+                
                     break;
 
         }
